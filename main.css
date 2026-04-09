@@ -1,3 +1,9 @@
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after 
+    { animation: none !important; 
+    transition: none !important; } 
+}
+
 @font-face {
     src: url("fonts/WarblerVariable[opsz\,wght]-Edu.woff2") format("woff2");
     font-family: "Warbler";
@@ -5,9 +11,9 @@
     font-weight: normal;
     }
     
-    body{
-    background-color: pink;
-    font-family: 'Warbler';
+body{
+    background-color: #F7F5EF;
+    font-family: "Warbler";
 }
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
@@ -28,12 +34,11 @@ grid-template-areas:
     "a a";
 }
 
-#history {
+#inspiration {
 grid-area: h;
-background-color: lightcoral;
 }
 
-#variations{
+#variables{
 grid-area: v;
 }
 
@@ -43,7 +48,7 @@ grid-area: a;
 }
 /* CSS for the footer */
 footer{
-    background-color: rgb(138, 21, 21);
+    background-color: #F7F5EF;
     height:200px;
 }
 
@@ -56,10 +61,17 @@ h2{
 h3{
     font-weight:20; 
     text-align: center;
-    font-size: 5em;
-    animation: weightChange 7s infinite;
+    font-size: 200px;
+    font-style: italic; color: #40311E;
+    /*animation: weightChange 7s infinite;*/
 }
 /* where the animation has changed */
+h4{
+    font-weight: 20;
+    text-align: center;
+    font-size: 200px;
+
+}
 @keyframes weightChange {
     0%, 100%{
         font-variation-settings: "opsz" 15, "wght" 400;
