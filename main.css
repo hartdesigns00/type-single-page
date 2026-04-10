@@ -10,6 +10,13 @@
     font-style: normal;
     font-weight: normal;
     }
+
+@font-face {
+    src: url("fonts/WarblerVariable-Italic[opsz\,wght]-Edu.woff") format("woff2");
+    font-family: "WarblerItalic";
+    font-style: normal;
+    font-weight: normal;
+    }
     
 body{
     background-color: #F7F5EF;
@@ -38,7 +45,7 @@ grid-template-areas:
 grid-area: h;
 }
 
-#variables{
+#variations{
 grid-area: v;
 }
 
@@ -54,15 +61,16 @@ footer{
 
 /* font styling area */
 h2{
-    color: firebrick;
-    font-variation-settings: "opsz" 16, "wght" 900, "slnt" -8;
+    color: #40311E;
+    font-family: "WarblerItalic";
+    font-variation-settings: "opsz" 50, "wght" 700;
 }
 
 h3{
     font-weight:20; 
     text-align: center;
     font-size: 200px;
-    font-style: italic; color: #40311E;
+    font-family: "WarblerItalic"; color: #40311E;
     /*animation: weightChange 7s infinite;*/
 }
 /* where the animation has changed */
