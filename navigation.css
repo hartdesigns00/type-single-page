@@ -25,9 +25,10 @@
   }
   /* where to change the background color of the pop-up nav bar*/
   nav {
-      position: absolute;
+      position: left;
       text-align: center;
       padding-top:10px;
+      padding-left: 136px;
       top: 100%;
       left: 10px;
       background: rgb(161, 64, 64);
@@ -143,8 +144,8 @@
       margin-left: 3em;
       margin-bottom: 0;
     }
-    nav a::before {
-     /* content: '';
+    /*nav a::before {
+      content: '';
       display: block;
       height: 3px;
       /* where to change color of underline on desktop nav
@@ -154,9 +155,9 @@
       left: 0;
       right: 0;
       transform: scale(0,1);
-      transition: transform ease-in-out 250ms; */
+      transition: transform ease-in-out 250ms; 
       
-    }
+    }*/
     nav a:hover::before {
       transform: scale(1,1);
     }

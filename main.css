@@ -30,15 +30,17 @@ body{
 }
 /* how the page wrapper appears on desktop */
 
+
 @media only screen and (min-width:800px){
 .page-wrapper{
 display: grid;
 grid-gap: 25px;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
-    "v h"
-    "a a";
+    "h"
+    "v"
+    "a";
 }
 
 #inspiration {
@@ -63,22 +65,30 @@ footer{
 h2{
     color: #40311E;
     font-family: "WarblerItalic";
-    font-variation-settings: "opsz" 50, "wght" 700;
+    font-size: 48px;
+    font-variation-settings: "opsz" 48, "wght" 700;
 }
 
 h3{
     font-weight:20; 
     text-align: center;
-    font-size: 200px;
-    font-family: "WarblerItalic"; color: #40311E;
+    font-size: 200px; 
+    color: #EAE1D7;
     /*animation: weightChange 7s infinite;*/
 }
 /* where the animation has changed */
 h4{
     font-weight: 20;
     text-align: center;
+    margin-top: -441px;
     font-size: 200px;
+    font-family: "WarblerItalic";
+    color: #40311E;
+}
 
+p{
+    font-size: 40px;
+    font-variation-settings: "opsz" 40, "wght" 400;
 }
 @keyframes weightChange {
     0%, 100%{
@@ -99,18 +109,21 @@ h4{
     }
 }
 /* where the animation is for the width change */
-.width{
-    animation: widthVariations 5s infinite;
+.weight{
+    animation: weightVariations 5s infinite;
 }
-@keyframes widthVariations {
+@keyframes sizeVariations {
     0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+        font-variation-settings: "opsz" 15, "wght" 400;
     }
-    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" 0;
+    50%{font-variation-settings: "opsz" 96, "wght" 400;
     }
 }
-
+.size{
+    animation: sizeVariations 5s infinite;
+}
 h5{
+    font-weight: 20;
     font-size:40px;
     color:blue;
     margin:15px;
