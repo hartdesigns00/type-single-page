@@ -26,7 +26,7 @@ body{
 .page-wrapper{
     /* where to change the width of the columns on desktop view */
     width: min(100% - 3rem, 95ch);
-    margin-inline: auto;
+    margin-inline: cover;
 }
 /* how the page wrapper appears on desktop */
 
@@ -49,6 +49,7 @@ grid-area: h;
 
 #variations{
 grid-area: v;
+box-align: center;
 }
 
 #alphabet {
@@ -89,6 +90,9 @@ h4{
 p{
     font-size: 40px;
     font-variation-settings: "opsz" 40, "wght" 400;
+    color: #40311E;
+    line-height: 110%;
+
 }
 @keyframes weightChange {
     0%, 100%{
@@ -100,6 +104,7 @@ p{
 /* animations for the variations section */
 .weight{
     animation: weightVariations 5s infinite;
+    color: #EAE1D7;
 }
 @keyframes weightVariations {
     0%, 100%{
@@ -109,9 +114,19 @@ p{
     }
 }
 /* where the animation is for the width change */
-.weight{
+.weight2{
     animation: weightVariations 5s infinite;
+    font-family: "warblerItalic";
+    margin-top: -128px;
 }
+@keyframes weight2Variations {
+    0%, 100%{
+        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+    }
+    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" 0;
+    }
+}
+
 @keyframes sizeVariations {
     0%, 100%{
         font-variation-settings: "opsz" 15, "wght" 400;
@@ -121,11 +136,23 @@ p{
 }
 .size{
     animation: sizeVariations 5s infinite;
+    color:#EAE1D7
+}
+@keyframes size2Variations {
+    0%, 100%{
+        font-variation-settings: "opsz" 15, "wght" 400;
+    }
+    50%{font-variation-settings: "opsz" 96, "wght" 400;
+    }
+}
+.size2{
+    animation: sizeVariations 5s infinite;
+    font-family: "WarblerItalic";
 }
 h5{
     font-weight: 20;
     font-size:40px;
-    color:blue;
+    color:#40311E;
     margin:15px;
 }
 
@@ -155,3 +182,34 @@ h5{
     font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
 }
 
+#variations{
+    text-align: center;
+}
+
+#alphabetit{
+    font-family: "WarblerItalic";
+}
+
+#subttl{
+    font-variant: small-caps;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "n c i";
+}
+
+#contact{
+    grid-area: c;
+}
+
+#name{
+    grid-area: n;
+}
+
+#CampusInfo{
+    grid-area: i;
+}
