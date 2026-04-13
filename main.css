@@ -26,7 +26,7 @@ body{
 .page-wrapper{
     /* where to change the width of the columns on desktop view */
     width: min(100% - 3rem, 95ch);
-    margin-inline: cover;
+    margin-inline: 120px;
 }
 /* how the page wrapper appears on desktop */
 
