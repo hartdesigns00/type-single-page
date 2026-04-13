@@ -49,7 +49,6 @@ grid-area: h;
 
 #variations{
 grid-area: v;
-box-align: center;
 }
 
 #alphabet {
@@ -184,6 +183,7 @@ h5{
 
 #variations{
     text-align: center;
+    align-self: center;
 }
 
 #alphabetit{
