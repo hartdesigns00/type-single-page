@@ -25,10 +25,47 @@ body{
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
     /* where to change the width of the columns on desktop view */
-    width: min(100% - 3rem, 95ch);
+    width: min(100% - 3rem, 50ch);
     margin-inline: 120px;
 }
 /* how the page wrapper appears on desktop */
+
+.hero{
+    display: grid;
+    max-width: 1440px;
+    margin-left: -30px;
+    margin-bottom: 400px;
+    grid-template-rows: 100px 1fr 0px 0px;
+    grid-template-columns: 50px 1fr 0px;
+    grid-template-areas: 
+    "c . ."
+    ". t ."
+    ". w ."
+    "m . b";
+}
+
+#WarblerHero{
+    grid-area: w;
+}
+
+#WARBLERHero{
+    grid-area: t;
+}
+
+#bayberryimg{
+    grid-area: b;
+    margin-top: -400px;
+    margin-left: -400px;
+}
+
+#caterpillerimg{
+    grid-area: c;
+}
+
+#lunarmothimg{
+    grid-area: m;
+    margin-top: -300px;
+}
 
 
 @media only screen and (min-width:800px){
@@ -74,16 +111,17 @@ h3{
     text-align: center;
     font-size: 200px; 
     color: #EAE1D7;
-    /*animation: weightChange 7s infinite;*/
+    animation: weightChange 7s infinite;
 }
 /* where the animation has changed */
 h4{
     font-weight: 20;
     text-align: center;
-    margin-top: -441px;
+    margin-top: -442px;
     font-size: 200px;
     font-family: "WarblerItalic";
     color: #40311E;
+    animation: weightChange 7s infinite;
 }
 
 p{
@@ -91,7 +129,6 @@ p{
     font-variation-settings: "opsz" 40, "wght" 400;
     color: #40311E;
     line-height: 110%;
-
 }
 @keyframes weightChange {
     0%, 100%{
