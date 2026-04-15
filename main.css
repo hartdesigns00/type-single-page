@@ -233,7 +233,8 @@ h5{
 
 footer{
     display: grid;
-    background-color: green;
+    max-height: 100px;
+    background-color: #40311E;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
@@ -242,12 +243,26 @@ footer{
 
 #contact{
     grid-area: c;
+    color: #F7F5EF;
+    text-align: center;
+    font-size: 24px;
+    text-decoration-line: underline;
+    align-content: center;
+    
 }
 
 #name{
     grid-area: n;
+    color: #F7F5EF;
+    font-size: 32px;
+    align-content: center;
+    
 }
 
 #CampusInfo{
     grid-area: i;
+    color: #F7F5EF;
+    text-align: center;
+    font-size: 24px;
+    align-content: center;
 }
