@@ -25,18 +25,18 @@ body{
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
     /* where to change the width of the columns on desktop view */
-    width: min(100% - 3rem, 50ch);
+    width: min(100% - 3rem, 95ch);
     margin-inline: 120px;
 }
 /* how the page wrapper appears on desktop */
 
 .hero{
     display: grid;
-    max-width: 1440px;
+    max-width: clamp (400px 1440px 100%);
     margin-left: -30px;
     margin-bottom: 400px;
     grid-template-rows: 100px 1fr 0px 0px;
-    grid-template-columns: 50px 1fr 0px;
+    grid-template-columns: 40px 1fr 0px;
     grid-template-areas: 
     "c . ."
     ". t ."
@@ -56,15 +56,18 @@ body{
     grid-area: b;
     margin-top: -400px;
     margin-left: -400px;
+    opacity: 50%;
 }
 
-#caterpillerimg{
+#caterpillarimg{
     grid-area: c;
+    opacity: 50%;
 }
 
 #lunarmothimg{
     grid-area: m;
     margin-top: -300px;
+    opacity: 50%;
 }
 
 
@@ -76,12 +79,18 @@ grid-template-columns: 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
     "h"
+    "s"
     "v"
-    "a";
+    "a"
+    "f";
+}
+
+#hero{
+    grid-area: h;
 }
 
 #inspiration {
-grid-area: h;
+grid-area: s;
 }
 
 #variations{
@@ -90,6 +99,10 @@ grid-area: v;
 
 #alphabet {
 grid-area: a;
+}
+
+#footer{
+    grid-area: f;
 }
 }
 /* CSS for the footer */
@@ -205,17 +218,6 @@ h5{
     transition: 
         font-weight 500ms,
         font-variation-settings 3s;
-}
-
-.variable-font:hover{
-    font-weight:500 ;
-    height:100vh;
-    font-size: 7em;
-    display:grid;
-    place-content: center;
-    margin: 0;
-    text-align: center;
-    font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
 }
 
 #variations{
